@@ -8,7 +8,7 @@ export default function StudentTableActions() {
   return (
     <div className="flex items-center justify-between py-5">
       <div className="flex flex-1 gap-4">
-        <TableSearchInput placeholder="Search People Here" />
+        <TableSearchInput placeholder="Buscar" />
       </div>
       <div className="flex gap-3">
         <Button>

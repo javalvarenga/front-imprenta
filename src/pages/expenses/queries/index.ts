@@ -21,11 +21,11 @@ export const addExpenseService = async (payload) => {
   const response = await addExpense(payload);
 
   Swal.fire({
-    position: 'top-right',
+    position: 'center',
     title: '¡Muy Bien!',
     text: 'Pedido Agregado Correctamente.',
     icon: 'success',
-    timer: 5000,
+    timer: 2000,
     width: 600,
     padding: '3em',
     color: '#716add',

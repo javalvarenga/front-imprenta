@@ -9,7 +9,7 @@ export default function OrdersTableActions({ selectedRows }) {
   return (
     <div className="flex items-center justify-between py-5">
       <div className="flex flex-1 gap-4">
-        <TableSearchInput placeholder="Search People Here" />
+        <TableSearchInput placeholder="Buscar" />
       </div>
       {/*       <span className="px-5">pedidos seleccionados {selectedRows.length}</span>*/}
       <div className="flex gap-3">

@@ -21,6 +21,7 @@ export default function OrdersTable({ orders }: TOrdersTableProps) {
           columns={columns}
           data={orders}
           onSelectedRowsChange={handleSelectedRowsChange}
+          defaultpageSize={20}
         />
       )}
     </>
