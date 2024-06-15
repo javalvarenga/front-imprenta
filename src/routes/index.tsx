@@ -7,10 +7,8 @@ const DashboardLayout = lazy(
 );
 const SignInPage = lazy(() => import('@/pages/auth/signin'));
 const DashboardPage = lazy(() => import('@/pages/dashboard'));
-const StudentPage = lazy(() => import('@/pages/students'));
-const StudentDetailPage = lazy(
-  () => import('@/pages/students/StudentDetailPage')
-);
+const OrdersPage = lazy(() => import('@/pages/orders'));
+const ExpensesPage = lazy(() => import('@/pages/expenses/index'));
 
 // ----------------------------------------------------------------------
 
@@ -31,12 +29,12 @@ export default function AppRouter() {
           index: true
         },
         {
-          path: 'student',
-          element: <StudentPage />
+          path: 'orders',
+          element: <OrdersPage />
         },
         {
-          path: 'student/details',
-          element: <StudentDetailPage />
+          path: 'expenses',
+          element: <ExpensesPage />
         }
       ]
     }

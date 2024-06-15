@@ -1,5 +1,5 @@
 import { useSearchParams } from 'react-router-dom';
-import { useGetStudents } from '../queries/queries';
+import { useGetOrders } from '../queries/queries';
 import { useState } from 'react';
 import PaginationSection from '@/components/shared/pagination-section';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
@@ -11,7 +11,7 @@ const InterestChannel = ({ title }: { title: string }) => {
   const pageLimit = 6;
   const country = searchParams.get('search') || null;
   const offset = (currentPage - 1) * pageLimit;
-  const { data } = useGetStudents(offset, pageLimit, country);
+  const { data } = useGetOrders(offset, pageLimit, country);
   const users = data?.users;
   console.log('users', users);
   const totalUsers = data?.total_users; //1000

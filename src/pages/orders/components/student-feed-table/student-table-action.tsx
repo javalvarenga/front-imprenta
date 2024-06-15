@@ -1,7 +1,7 @@
 import PopupModal from '@/components/shared/popup-modal';
 import TableSearchInput from '@/components/shared/table-search-input';
 import { Button } from '@/components/ui/button';
-import StudentCreateForm from '../student-forms/student-create-form';
+import StudentCreateForm from '../CreateOrderForm/CreateOrderForm';
 import { DownloadIcon } from 'lucide-react';
 
 export default function StudentTableActions() {

@@ -3,6 +3,49 @@
 @tailwind components;
 @tailwind utilities;
 
+.max-w-lg {
+  max-width: 36rem !important;
+}
+
+.dark select {
+  color: white;
+  background-color: transparent;
+}
+
+.dark option {
+  color: white;
+  background-color: black !important;
+}
+
+/* styles.css */
+.dark .custom-datepicker {
+  background-color: #1a1a1a; /* Color de fondo negro */
+  color: white; /* Color de texto blanco */
+  border: 1px solid #d3d3d3; /* Border color */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.light .custom-datepicker {
+  border: 1px solid #d3d3d3; /* Border color */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.custom-datepicker .react-datepicker__day--selected,
+.custom-datepicker .react-datepicker__day--keyboard-selected {
+  background-color: #d3d3d3; /* Color de fondo seleccionado */
+  color: white; /* Color de texto seleccionado */
+}
+
+.custom-datepicker .react-datepicker__header {
+  background-color: #d3d3d3; /* Fondo de la cabecera */
+  border-bottom: 1px solid #d3d3d3; /* Border bottom */
+}
+
+.custom-datepicker .react-datepicker__current-month,
+.custom-datepicker .react-datepicker__day-name {
+  color: white; /* Color de texto de la cabecera */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

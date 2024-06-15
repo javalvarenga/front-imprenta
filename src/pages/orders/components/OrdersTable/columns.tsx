@@ -1,7 +1,6 @@
 import { Checkbox } from '@/components/ui/checkbox';
 import { Employee } from '@/constants/data';
 import { ColumnDef } from '@tanstack/react-table';
-import { CellAction } from './cell-action';
 
 export const columns: ColumnDef<Employee>[] = [
   {
@@ -24,27 +23,27 @@ export const columns: ColumnDef<Employee>[] = [
     enableHiding: false
   },
   {
-    accessorKey: 'first_name',
-    header: 'NAME'
+    accessorKey: 'ordenId',
+    header: 'ID'
   },
   {
-    accessorKey: 'country',
-    header: 'COUNTRY'
+    accessorKey: 'descripcion',
+    header: 'DESCRIPCION'
   },
   {
-    accessorKey: 'email',
-    header: 'EMAIL'
+    accessorKey: 'estado',
+    header: 'ESTADO'
   },
   {
-    accessorKey: 'job',
-    header: 'COMPANY'
+    accessorKey: 'anticipo',
+    header: 'ANTICIPO'
   },
   {
-    accessorKey: 'gender',
-    header: 'GENDER'
-  },
-  {
+    accessorKey: 'saldo',
+    header: 'SALDO'
+  }
+  /*   {
     id: 'actions',
     cell: ({ row }) => <CellAction data={row.original} />
-  }
+  } */
 ];
